@@ -62,5 +62,17 @@ void Point3D::translate(Point3D const& v) {
 	translateZ(v.getZ());
 }
 
+void Point3D::read(){
+    std::cout<<"Enter dimensions in format -> x y z"<<std::endl;
+    double c;
+    std::cin>>c;
+    setX(c);
+    std::cin>>c;
+    setY(c);
+    std::cin>>c;
+    setZ(c);
+}
 
-
+void Point3D::print() const{
+    std::cout<<'('<<getX()<<','<<getY()<<','<<getZ()<<')';
+}
