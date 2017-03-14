@@ -11,7 +11,7 @@ private:
     Point3D A,B,C,D;
 public:
     Pyramid();
-    Pyramid(Point3D A, Point3D B, Point3D C, Point3D D); // more like t
+    Pyramid(Point3D A, Point3D B, Point3D C, Point3D D); // more like Tetrahedron
 
     Point3D getA()const;
     Point3D getB()const;
