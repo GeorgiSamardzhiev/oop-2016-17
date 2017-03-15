@@ -67,9 +67,9 @@ double Pyramid::baseSurface()const {
 
 double Pyramid::volume()const{
     Point3D AC = C, AB = B, AD = D;
-    AC.translate(A);
-    AB.translate(B);
-    AD.translate(D);
+    AC.translate(-A);
+    AB.translate(-A);
+    AD.translate(-A);
     return det(AC, AB, AD)/6;
 
 }
